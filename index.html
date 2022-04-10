@@ -1,73 +1,153 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="/assets/css/reset.css">
-    <link rel="stylesheet" type="text/css" href="/assets/css/style.css">
-    <title>Andrew Running's Portfolio</title>
-</head>
-
-<body class="container">
-    <nav>
-        <h1><a href="#home">Andrew Running</a></h1>
-        <ul>
-            <li><a href="#about">About Me</a></li>
-            <li><a href="#work">Work</a></li>
-            <li><a href="#contact">Contact Me</a></li>
-        </ul>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>Andrew's Professional Portfolio</title>
+  </head>
+  <body>
+    <nav class="navbar has-background-dark" role="navigation" aria-label="main navigation">
+      <div class="navbar-brand">
+        <p class="p-4">Andrew Running</p>
+        <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+        </a>
+      </div>
+      <div class="navbar-end">
+        <a id="1" class="navbar-item" href="#aboutMe">About</a>
+        <a class="navbar-item" href="#myWork">Work</a>
+        <a class="navbar-item" href="#myContact">Contact</a>
+        <a class="navbar-item" href="#myResume">Resume</a>
+      </div>
     </nav>
 
-    <figure class="bannerimage"></figure>
+    <section class="hero is-small">
+      <div class="hero-body">
+        <img src="./assets/images/update-social-banner.png" alt="coding desk">
+      </div>
+    </section>
+    <main>
+      <div class="about-me" id="aboutMe">
+        <div class="columns is-flex">
+          <div class="column is-flex is-one-third-desktop is- is-justify-content-right">
+            <h2 class="about-text has-text-right">About<br/>Me</h2>
+          </div>
+          <div class="column">
+            <p class="about-description">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Cupiditate nostrum, neque iste quis maiores consequatur vitae
+              nesciunt amet blanditiis assumenda tenetur quasi omnis sapiente
+              dolore. Impedit animi deleniti delectus facere. Lorem ipsum dolor
+              sit amet consectetur adipisicing elit. Fugit recusandae numquam
+              quas optio soluta veritatis facilis commodi repellendus corporis
+              autem, laborum eligendi, reprehenderit cupiditate a porro minima
+              in architecto veniam!
+            </p>
+          </div>
+        </div>
+      </div>
 
-    <main class="row">
-        <section id="about" class="about">
-            <h2>About Me</h2>
-            <p>Aspiring Fullstack Developer coming from construction field. </p>
-        </section>
+      <div class="work" id="myWork">
+        <div class="columns is-flex">
+          <div class="column is-flex is-one-third is-justify-content-right">
+            <h3 class="has-text-right">Work</h3>
+          </div>
+          <div id="work-card-container" class="column">
+            <div class="card is-flex">
+              <div class="card-image">
+                <figure class="image">
+                  <img src="./assets/images/project1.png" alt="brewery search">
+                  <p class="img-description p-4">
+                    <a href="https://andrewrunning4.github.io/project1/" target="_blank">Brewery Search</a>
+                  </p>
+                </figure>
 
-        <section id="work" class="work">
-            <h2>&nbsp;&nbsp;&nbsp;&nbsp;Work</h2>
-            <img src="#" alt="#">
-            <aside>
-                <section class="card" id="card1">
-                    <header>Lorem</header>
-                    <p>Loren Ipsum</p>
-                    <img src="#" alt="#">
-                </section>
-                <section class="card" id="card2">
-                    <header>Lorem</header>
-                    <p>Loren Ipsum</p>
-                    <img src="#" alt="#">
-                </section>
-                <section class="card" id="card3">
-                    <header>Lorem</header>
-                    <p>Loren Ipsum</p>
-                    <img src="#" alt="#">
-                </section>
-                <section class="card" id="card4">
-                    <header>Lorem</header>
-                    <p>Loren Ipsum</p>
-                    <img src="#" alt="#">
-                </section>
-            </aside>
-        </section>
+                <div class="columns is-align-items-stretch">
+                  <figure class="column image cimage">
+                    <img src="./assets/images/codequiz.png" alt="code quiz">
+                    <p class="img-description p-2">
+                      <a href="https://andrewrunning4.github.io/code-quiz/" target="_blank">Code Quiz</a>
+                    </p>
+                  </figure>
+                  <figure class="column image cimage">
+                    <img src="./assets/images/passwordgenerator.png" alt="password generator">
+                    <p class="img-description p-1">
+                      <a target="_blank" href="https://andrewrunning4.github.io/password-generator">Password Generator</a>
+                    </p>
+                  </figure>
+                </div>
+                <div class="columns">
+                  <figure class="column image cimage">
+                    <img src="./assets/images/workdayscheduler.png" alt="workday scheduler">
+                    <p class="img-description p-2">
+                      <a href="https://andrewrunning4.github.io/work-day-scheduler/" target="_blank">Workday Scheduler</a>
+                    </p>
+                  </figure>
+                  <figure class="column image cimage">
+                    <img src="./assets/images/weather.png" alt="weather dashboard">
+                    <p class="img-description p-2">
+                      <a href="">Weather Dashboard</a>
+                    </p>
+                  </figure>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="columns is-flex" id="myContact">
+        <div class="column is-flex is-one-third is-justify-content-right">
+          <h3 class="contact-text has-text-right">Contact<br/>Me</h3>
+        </div>
+        <div class="column link-column is-flex p-6 m-3">
+          <div class="columns link-container is-flex">
+            <div class="column link-line is-flex">
+              <a class="links" href="tel:5554280940" type="tel">555-555-5555</a>
+            </div>
+            <div class="column link-line is-flex">
+              <a class="links mr-6 ml-6" href="mailto:andrew.running@gmail.com">Andrew.Running@gmail.com</a>
+            </div>
+            <div class="column link-line is-flex">
+              <a class="links" href="https://github.com/andrewrunning4" target="_blank">GitHub</a>
+            </div>
+            <div class="column link-line is-flex">
+              <a class="links" href="#">Twitter</a>
+            </div>
+            <div class="column link-line is-flex">
+              <a class="links" href="www.linkedin.com/in/andrew-running-761130188">LinkedIn</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="work" id="myResume">
+        <div class="columns is-flex">
+          <div class="column is-flex is-one-third is-justify-content-right">
+            <h3 class="has-text-right">Resume</h3>
+          </div>
+          <div id="resume-card-container" class="column">
+            <div class="card is-flex">
+              <div class="card-image">
+                <figure class="image">
+                  <img src="./assets/images/resume.png" alt="resume">
+                  <p class="img-description p-4">
+                    <a href="#" target="_blank">Resume</a>
+                  </p>
+                </figure>
+
+                
+                
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </main>
-
-
-    <footer id="contact" class="contact">
-        <h2>Contact Me</h2>
-        <ol>
-            <li><a href="#">email</a></li>
-            <li><a href="#">github</a></li>
-            <li><a href="#">twitter</a></li>
-            <li><a href="#">linkedin</a></li>
-        </ol>
-
-
-    </footer>
-</body>
-
+  </body>
 </html>
